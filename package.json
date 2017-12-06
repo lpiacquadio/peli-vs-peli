@@ -1,0 +1,37 @@
+{
+  "name": "peli-vs-peli",
+  "version": "1.0.0",
+  "description": "peli-vs-peli",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lpiacquadio/peli-vs-peli.git"
+  },
+  "keywords": [],
+  "author": "Lautaro Piacquadio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lpiacquadio/peli-vs-peli/issues"
+  },
+  "homepage": "https://github.com/lpiacquadio/peli-vs-peli#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "moment": "^2.19.3",
+    "mysql": "^2.15.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "nodemon": "^1.12.5"
+  }
+}
