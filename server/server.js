@@ -3,8 +3,8 @@ require('dotenv').config();
 var express = require('express');
 var cors = require('cors');
 var bodyParser = require('body-parser');
-var BaseController = require('./controllers/base');
-var CompetenciasController = new BaseController('competencia');
+var CompetenciasController = require('./controllers/competencia');
+var competencia = new CompetenciasController();
 
 var app = express();
 app.use(cors());
@@ -21,7 +21,7 @@ app.get('/', function (req, res) {
     });
 });
 
-CompetenciasController.init(app);
+competencia.init(app);
 
 app.listen(process.env.EXPRESS_PORT, function () {
     console.log(`http://localhost:${process.env.EXPRESS_PORT}/`);
