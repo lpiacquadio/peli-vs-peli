@@ -66,7 +66,6 @@ CompetenciasController.prototype.retrievePeliculas = function(req, res) {
             }
         }
         var queryPeliculas = `SELECT DISTINCT pelicula.id, poster, titulo, genero_id FROM pelicula LEFT JOIN actor_pelicula ON pelicula.id = actor_pelicula.pelicula_id LEFT JOIN director_pelicula ON pelicula.id = director_pelicula.pelicula_id${filter} ORDER BY RAND() LIMIT 2`;
-        console.log(queryPeliculas);
 
         connection.query(queryPeliculas, function (error, results) {
             if (error) {
